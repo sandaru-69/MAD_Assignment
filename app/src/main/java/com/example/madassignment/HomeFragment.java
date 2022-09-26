@@ -30,10 +30,10 @@ public class HomeFragment extends Fragment {
 
         resModelList = new ArrayList<>();
 
-        resModelList.add(new restaurantsmodel(R.drawable.kfc, "K.F.C", "25-30 min", "4.8", "Delivery Rs.180/-", "res1"));
+        resModelList.add(new restaurantsmodel(R.drawable.kfc, "K F C", "25-30 min", "4.8", "Delivery Rs.180/-", "res1"));
         resModelList.add(new restaurantsmodel(R.drawable.mcdonalds, "McDonald's", "35-40 min", "5.0", "Delivery Rs.250/-", "res2"));
         resModelList.add(new restaurantsmodel(R.drawable.burgerking, "Burger King", "25-30 min", "4.7", "Delivery Rs.150/-", "res3"));
-        resModelList.add(new restaurantsmodel(R.drawable.breadtalk, "BreadTalk", "20-30 min", "4.6", "Delivery Rs.200/-", "res4"));
+        //resModelList.add(new restaurantsmodel(R.drawable.breadtalk, "BreadTalk", "20-30 min", "4.6", "Delivery Rs.200/-", "res4"));
         resModelList.add(new restaurantsmodel(R.drawable.tacobell, "Taco Bell", "30-40 min", "5.0", "Delivery Rs.225/-", "res5"));
 
         resAdapter = new restaurantsadapter(getActivity(), resModelList);

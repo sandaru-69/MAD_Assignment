@@ -32,8 +32,6 @@ public class ItemMenuAdapter extends RecyclerView.Adapter<ItemMenuAdapter.ViewHo
         holder.price.setText(list.get(position).getPrice());
         holder.name.setText(list.get(position).getName());
         holder.description.setText(list.get(position).getDescription());
-        holder.rating.setText(list.get(position).getRating());
-        holder.timing.setText(list.get(position).getTiming());
 
 
     }
@@ -46,7 +44,7 @@ public class ItemMenuAdapter extends RecyclerView.Adapter<ItemMenuAdapter.ViewHo
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView imageView;
-        TextView name, price, description, rating, timing;
+        TextView name, price, description;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -54,8 +52,6 @@ public class ItemMenuAdapter extends RecyclerView.Adapter<ItemMenuAdapter.ViewHo
             price = itemView.findViewById(R.id.item_price);
             name = itemView.findViewById(R.id.item_name);
             description = itemView.findViewById(R.id.item_desc);
-            rating = itemView.findViewById(R.id.item_rate);
-            timing = itemView.findViewById(R.id.item_time);
 
         }
     }

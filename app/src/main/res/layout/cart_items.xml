@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="5dp">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -34,18 +34,9 @@
                 android:textColor="@color/black"
                 android:maxLines="1"
                 android:singleLine="true"
-                android:textSize="18sp"
+                android:textSize="24sp"
+                android:layout_marginBottom="10dp"
                 android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/item_desc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Description"
-                android:ellipsize="end"
-                android:maxLines="2"
-                android:textColor="@color/black"
-                android:singleLine="true"/>
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -53,34 +44,45 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/currency_icon"
+                    android:id="@+id/rateicon"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    android:src="@drawable/ic_baseline_currency_rupee_24"
-                    app:layout_constraintBottom_toBottomOf="@+id/item_price"
+                    android:src="@drawable/ic_baseline_star_rate_24"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/item_price"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.0"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/rateicon"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/currency_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_currency_rupee_24"
+                    app:layout_constraintEnd_toStartOf="@+id/cartitem_price"
+                    app:layout_constraintTop_toTopOf="@+id/cartitem_price"
                     app:tint="@color/teal_700" />
 
                 <TextView
-                    android:id="@+id/item_price"
+                    android:id="@+id/cartitem_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2000.0"
+                    android:layout_marginRight="30dp"
+                    android:text="180"
                     android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/almendra"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/currency_icon"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:layout_width="97dp"
-                    android:layout_height="wrap_content"
-                    android:text="Add To Cart"
-                    android:textAllCaps="false"
-                    android:textSize="10sp"
-                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

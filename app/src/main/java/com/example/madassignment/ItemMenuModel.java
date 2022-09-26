@@ -4,17 +4,14 @@ public class ItemMenuModel {
     int image;
     String name;
     String description;
-    String rating;
     String price;
-    String timing;
 
-    public ItemMenuModel(int image, String name, String description, String rating, String price, String timing) {
+
+    public ItemMenuModel(int image, String name, String description, String price) {
         this.image = image;
         this.name = name;
         this.description = description;
-        this.rating = rating;
         this.price = price;
-        this.timing = timing;
     }
 
     public int getImage() {
@@ -41,14 +38,6 @@ public class ItemMenuModel {
         this.description = description;
     }
 
-    public String getRating() {
-        return rating;
-    }
-
-    public void setRating(String rating) {
-        this.rating = rating;
-    }
-
     public String getPrice() {
         return price;
     }
@@ -57,11 +46,4 @@ public class ItemMenuModel {
         this.price = price;
     }
 
-    public String getTiming() {
-        return timing;
-    }
-
-    public void setTiming(String timing) {
-        this.timing = timing;
-    }
 }

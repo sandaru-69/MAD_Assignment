@@ -18,4 +18,7 @@
     <string name="price">Delivery - Rs.200/-</string>
     <string name="res1">res1</string>
     <string name="t">TODO</string>
+    <string name="_30_40_min">30-40 min</string>
+    <string name="place_order">Place Order</string>
+    <string name="my_cart">My Cart</string>
 </resources>
